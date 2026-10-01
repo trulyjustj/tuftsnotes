@@ -61,6 +61,10 @@
                 <a href="#note-meeting" onclick="showNote('meeting-notes')">Meeting Notes - Oct 1</a> (Category: Meetings)
                 <p>Discussion summary and action items from weekly meeting.</p>
             </li>
+            <li data-title="math70 linear algebra" data-category="mathematics">
+                <a href="#note-math70" onclick="showNote('math70-linear-algebra')">MATH70 - Linear Algebra</a> (Category: Mathematics)
+                <p>Vectors, matrices, systems of equations, and linear transformations.</p>
+            </li>
         </ul>
     </main>
 
@@ -89,6 +93,12 @@
                 <h3>Meetings</h3>
                 <ul>
                     <li><a href="#note-meeting" onclick="showNote('meeting-notes')">Meeting Notes - Oct 1</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Mathematics</h3>
+                <ul>
+                    <li><a href="#note-math70" onclick="showNote('math70-linear-algebra')">MATH70 - Linear Algebra</a></li>
                 </ul>
             </li>
         </ul>
@@ -160,6 +170,23 @@
                 <li>Next sync scheduled for next week</li>
             </ul>
         </article>
+
+        <!-- Individual Note: MATH70 -->
+        <article id="note-math70-linear-algebra" style="display:none;">
+            <h2>MATH70 - Linear Algebra</h2>
+            <p><strong>Category:</strong> Mathematics | <strong>Date:</strong> Oct 2026</p>
+            <p>Linear algebra is the study of vectors, matrices, and linear transformations. It is foundational for many areas of mathematics, engineering, physics, and computer science.</p>
+            <h3>Key Topics</h3>
+            <ul>
+                <li>Vectors and vector spaces</li>
+                <li>Systems of linear equations</li>
+                <li>Matrix operations and inverses</li>
+                <li>Determinants and eigenvalues</li>
+                <li>Orthogonality and projections</li>
+            </ul>
+            <h3>Important Idea</h3>
+            <p>Many real-world problems can be modeled as linear systems, where matrix methods help solve, interpret, and transform the data.</p>
+        </article>
     </main>
 
     <hr>
@@ -193,6 +220,7 @@
             document.getElementById('note-html-elements').style.display = 'none';
             document.getElementById('note-git-commands').style.display = 'none';
             document.getElementById('note-meeting-notes').style.display = 'none';
+            document.getElementById('note-math70-linear-algebra').style.display = 'none';
 
             // Show target note article
             const targetNote = document.getElementById('note-' + noteId);
